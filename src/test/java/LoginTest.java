@@ -27,7 +27,9 @@ public class LoginTest {
 		driver.get("http://gmail.com");
 		driver.findElement(By.id("identifierId")).sendKeys("divyapeddakotla@gmail.com");
 		driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();
+		System.out.println(driver.getTitle());
 	}
+
 
 	@AfterSuite
 	public void tearDown() {
